@@ -70,13 +70,18 @@ function updateQuantity(){
 
 // función que elimina el concepto
 
-function delateConcept (id){
+function delateConcept (objId){
+  console.log(objId)
 
-  const removeaConcept = document.getElementById(id);
-  removeaConcept.remove(id)
-  listofConcepts = listofConcepts.filter(item => item.id!== id); 
+  const removeConfir = window.confirm("¿Estás seguro de borrar esta operación?")
 
-  drawOnhistorial (listofConcepts)
+  
+  if (removeConfir) {
+    const newItem = document.getElementById(objId)
+    newItem.remove()
+    historial = historial.filter(item => item.id !== objId)
+  }
+  updateQuantity(historial)
 }
 
 // función que dibuja cada concepto en el historial 
@@ -85,11 +90,11 @@ function drawOnhistorial (obj) {
 
   const newItem = document.createElement ("li")
 
-  newItem.setAttribute ("id", records.id)
+  newItem.setAttribute ("id", obj.id)
  
   aConcept = ` ${obj.expense} 
        ${obj.quantity}€ 
-      <button class= "delete" onclick= "delateConcept(${obj.id})" > X </button> ;` 
+      <button class= "delete" onclick= "delateConcept(${obj.id})" > X </button>` 
       
   
 
