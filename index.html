@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Control de gastos </title>
+    <link rel="stylesheet" href="/style.css">
+</head>
+<body>
+    
+    <h1> Control de gastos</h1>
+    
+    <!-- Creo el esqueleto de la página web o 'app' -->
+    <!-- Una sección que recoja los elementos de las cantidades y donde sea posible borrar el concepto-->
+    
+    <div id="outcome">Ingresos
+        <p id="totaloutcome" class="green">0,00€</p>
+    </div>
+    <div id="spends">Gastos
+        <p id="totalspends" class="red">0,00€</p>
+    </div>
+    <div id="saving">Ahorro
+        <p id = savings>0.00€</p>
+    </div>
+    
+    <!-- necesito: Un input donde recoja el concepto (string) + la cantidad (número) asociado a un botón-->
+    
+    <ul id="records">Historial <hr>
+    </ul>
+    
+    <!-- otra sección que muestre los ingresos y los gastos -->
+    <form id="createExpenses" novalidate>
+        
+        <input id="concept" type="text" placeholder=" Añade concepto...">
+        <br> 
+        <input id="cantidad" type="number"> </input>
+        <button id="add" type="submit">Añadir transacción</button>
+        
+        <p id="addConcept"></p>
+    </form>
+    
+    <script src="/index.js"></script>
+</body>
+</html>
