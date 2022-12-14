@@ -1,0 +1,90 @@
+
+
+
+
+#outcome, #spends, #saving {
+    margin:  10px;
+    background-color: #faedcd;
+    border-radius: 10px;
+    text-align: center;
+    padding: 5px;
+    color: var(--primary-color);
+    display: flex;
+    justify-content:space-around
+
+    
+}
+
+
+h1 {
+    background-color: #735d78 ;
+    border-radius: 10px;
+    text-align: center;
+    padding: 5px;
+    color: #fff
+}
+
+#records {
+    background-color: #d1b3c4;
+    border-radius: 20px;
+    text-align:center;
+    padding: 10px;
+    font-size: 20px;
+    font-weight: bold;
+    color: #fff;
+}
+
+
+
+li{
+    list-style-type: none;
+    text-align: center;
+    background-color: #d1b3c4;
+    border-radius: 20px;
+    font-size: 15px;
+    font-weight: normal;
+    color: black;
+
+    
+}
+
+button.delete{
+    
+    transition-duration: 0.4s;
+}
+
+
+
+button.delete:hover{
+    background-color: #735d78;
+    color: white;
+}
+
+input{
+    
+    padding: 10px 10px;
+    margin: 8px 10px;
+    box-sizing: border-box;
+    width: 90%;
+    border: none;
+    border-bottom: 1px solid black;
+    
+   
+}
+
+
+
+button#add {
+    width: 15%;
+    padding: 5px;
+    background-color: #f7d1cd;
+    text-align: center;
+    border-radius: 5px;
+    border: 1px solid black;
+
+
+}
+
+button#add:hover{
+    background-color: #d1b3c4;
+}
