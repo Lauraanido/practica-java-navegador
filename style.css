@@ -18,6 +18,7 @@
 
 h1 {
     background-color: #735d78 ;
+    font-size: 25px;
     border-radius: 10px;
     text-align: center;
     padding: 5px;
@@ -75,7 +76,7 @@ input{
 
 
 button#add {
-    width: 15%;
+    width: 25%;
     padding: 5px;
     background-color: #f7d1cd;
     text-align: center;
